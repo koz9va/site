@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway')
+@media screen and (max-width: 760px)
+    svg
+        display: block
+    .line
+        animation-direction: reverse
+    .top-h2
+        font-size: 1.5em
+    .headlines
+        flex-wrap: wrap
+    .back
+        margin-right: 2%
+        margin-left: 2%
+        font-size: 0.9em
+    .menu-full
+        display: none
+    .ele
+        font-size: 2em
+@media screen and (min-width: 760px)
+    svg
+        display: none
+    .line
+        animation-direction: normal
+    .top-h2
+        font-size: 2.4em
+    .headlines
+        flex-wrap: nowrap
+    .back
+        margin-right: 10%
+        margin-left: 10%
+    .menu-full
+        display: flex
+@keyframes start-line
+    from
+        width: 85%
+    to
+        width: 40%
+@keyframes start-opacity
+    from
+        opacity: 0
+    to
+        opacity: 1
+body
+    margin: 0
+svg
+    width: 8%
+    height: 80%
+    cursor: pointer
+*
+    font-family: 'Raleway', sans-serif
+    color: #fff
+.logo
+    color: #fff
+    font-size: 1.5em
+header
+    width: 100%
+    height: 7%
+    display: flex
+    position: fixed
+    top: 0px
+    right: 0px
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    z-index: 4
+    background-color: black
+    transition: .3s
+    *
+        margin-left: 3%
+        margin-right: 3%
+.menu-full
+    flex-direction: row
+    justify-content: space-between
+    align-content: center
+    align-items: center
+    flex-wrap: nowrap
+    width: 35%
+.ele
+    position: relative
+    cursor: pointer
+.ele::after
+    content: ""
+    background-color: #fff
+    position: absolute
+    transition: .3s
+    top: 90%
+    width: 0px
+    height: 2px
+    transform: translateY(-50%)
+.ele:hover::after
+    transition: .3s
+    width: 100%
+.start
+    height: 12%
+    transition: .3s
+    background-color: rgba(225,225,225, 0)
+#main
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    flex-wrap: nowrap
+    background-attachment: fixed
+    background-size: cover
+    background-repeat: no-repeat
+path
+    fill: #fff
+g
+    fill: #fff
+.top
+    width: 100%
+    height: 50vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    align-content: center
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    background-color: black
+.opacity
+    animation-name: start-opacity
+    animation-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860)
+    animation-delay: 0.2s
+    animation-fill-mode: forwards
+    animation-iteration-count: 1
+    animation-duration: 1s 
+
+.line
+    background-color: #fff
+    height: 3px
+    animation-name: start-line
+    animation-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860)
+    animation-delay: 0.2s
+    animation-fill-mode: forwards
+    animation-iteration-count: 1
+    animation-duration: 1s    
+.about
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: center
+    flex-wrap: nowrap
+    align-items: center
+    background-color: #fff
+    text-align: center
+    *
+        margin-right: 5%
+        margin-left: 5%
+        margin-top: 3%
+        margin-bottom: 3%
+        color: black
+.headlines
+    display: flex
+    width: 100%
+    flex-direction: row
+    justify-content: space-around
+    align-content: center
+    align-items: center
+    text-align: center
+.text
+    margin-right: 20%
+    margin-left: 20%
+.head-svg
+    width: 100px
+.photos
+    background-color: black
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: center
+    align-items: center
+.photo
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-content: center
+    align-items: center
+    flex-wrap: wrap
+    width: 70%
+    .back
+        width: 250px
+        height: 250px
+        color: #fff
+        background-size: cover
+        margin-top: 3%
+        margin-bottom: 3%
+.back-content
+    opacity: 0
+    background-color: rgba(225,225,225,0.7)
+    transition: .3s
+    width: 100%
+    height: 100%
+    text-align: center
+    cursor: pointer
+.back:focus .back-content,
+.back:hover .back-content
+    opacity: 1
+    transition: .3s
+.contacts
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-content: center
+    align-items: center
+    *
+        color: black
+        margin-right: 5%
+        margin-left: 5%
+        margin-top: 3%
+        margin-bottom: 3%
+form
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-content: center
+    align-items: center
+textarea,input
+    outline: none
+    border-top-width: 0px
+    border-right-width: 0px
+    border-left-width: 0px
+    border-color: black
+    transition: .3s
+    font-size: 1.25em
+input:focus
+    transition: .3s
+    border-color: #16a085
+textarea:focus
+    transition: .3s
+    border-color: #16a085
+textarea
+    border-bottom-width: 3px
+button
+    outline: none
+    border: 2px solid black
+    background-color: rgba(225,225,225,0)
+    font-size: 1.5em
+    padding-top: 5px
+    padding-bottom: 5px
+    padding-right: 15px
+    padding-left: 15px
+    color: black
+    transition: .3s
+button:hover
+    transition: .3s
+    background-color: black
+    color: #fff
+button:active
+    transition: .3s
+    background-color: #fff
+    color: black
+.copy-r
+    width: 100%
+    height: 25vh
+    background-color: black
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-content: center
+    align-items: center
+    flex-wrap: wrap
+    text-align: center
+    p
+        font-size: 1.25em
+        margin: 5%
+        margin-top: 3%
+        margin-bottom: 3%
+.mask
+    position: fixed
+    top: 0
+    right: 0
+    width: 100vw
+    height: 100vh
+    background-color: rgba(0,0,0,0.8)
+    z-index: 10
+    display: none
+.mask-menu
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    align-content: center
+.mask-m
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-content: center
+    flex-wrap: nowrap
+.about
+    p
+        font-size: 1.25em

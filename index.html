@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <!-- build:css -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- endbuild -->
+        <title>Web Design</title>
+    </head>
+    <body>
+        <div class="mask" onclick="maskk(true)">
+            <div class="mask-menu">
+                <div class="ele" onclick="TOP()"><p>Top</p></div>
+                <div class="ele" onclick="TOscroll('.about')"><p>Introduction</p></div>
+                <div class="ele" onclick="TOscroll('.photos')"><p>Skills</p></div>
+                <div class="ele" onclick="TOscroll('.contacts')"><p>Contact</p></div>
+                <p>*Two taps to go</p>
+            </div>
+        </div>
+    <header class="start" id="menu">
+        <p class=logo> Serafim Goncharov </p>
+        <div class="menu-full">
+            <div class="ele"onclick="TOP()"><p>Top</p></div>
+            <div class="ele" onclick="TOscroll('.about')"><p>Introduction</p></div>
+            <div class="ele" onclick="TOscroll('.photos')"><p>Skills</p></div>
+            <div class="ele" onclick="TOscroll('.contacts')"><p>Contact</p></div>
+        </div>
+        <svg onclick="maskk(false)" version="1.1" id="svg-img" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<path d="M256,0C114.609,0,0,114.609,0,256s114.609,256,256,256s256-114.609,256-256S397.391,0,256,0z M256,472
+	c-119.297,0-216-96.703-216-216S136.703,40,256,40s216,96.703,216,216S375.297,472,256,472z"/>
+<g>
+	<rect x="151.5" y="184.5" fill-rule="evenodd" clip-rule="evenodd" width="192" height="32"/>
+	<rect x="151.5" y="248.5" fill-rule="evenodd" clip-rule="evenodd" width="192" height="32"/>
+	<rect x="151.5" y="312.5" fill-rule="evenodd" clip-rule="evenodd" width="192" height="32"/>
+</g>
+</svg>
+    </header>
+        <div id="main">
+           <div class="top">
+               <h2 class="top-h2 opacity">Serafim Goncharov</h2>
+               <span class="line"></span>
+               <p class="opacity">Front-end developer</p>
+           </div>
+           <div class="about">
+               <div class="text">
+                   <h1>Live to create!</h1>
+                    <p>During all my life I love creativity and freedom. I want help people to find their better bussines solution. How you know, best of all I create beautiful and fast web sites. It is my better way to help people</p>
+                    <p>You will ask me: "why should I choose your service?"</p>
+               </div>
+               <div class="headlines">
+                   <div class="block">
+                    <img src="img/fast.svg" alt="fast" class="head-svg">
+                    <h2>It`s fast</h2>
+                    <p>When you love your work, you don`t work — you live and relax. When you relaxed, you don`t pay attention on other things, that postpone you</p>
+                   </div>
+                    <div class="block">
+                    <img src="img/beautiful.svg" alt="beautiful" class="head-svg">
+                    <h2>Beautiful</h2>
+                    <p>To get attention of people, your product should be beautiful. First type of evalunation is visual mark.
+                        Well, look at my site, if you read this, I won your attention
+                    </p>
+                   </div>
+                   <div class="block">
+                    <img src="img/idea.svg" alt="clearly" class="head-svg">
+                    <h2>Clearly</h2>
+                    <p>Second step of good product is lucidity and thing that makes this unique. I want to use all my clever mind to realize all your ideas</p>
+                   </div>
+               </div>
+           </div>
+           <div class="photos">
+               <div class="photo">
+                   <div class="back" style="background-image: url(../img/jquery.svg)">
+                       <div class="back-content">
+                        <h2 style="color: black">Jquery is the most popular and useful web technology to create Front-end part of website. Of course I can use it </h2>
+                       </div>
+                   </div>
+                   <div class="back" style="background-image: url(../img/css.svg); background-size: 100% 100%;">
+                       <div class="back-content">
+                           <br>
+                        <h2 style="color: black">CSS3 is main part of front side of site, without it you can`t create anything. everyone must know it to name himself Front-end developer</h2>
+                       </div>
+                   </div>
+                   <div class="back" style="background-image: url(../img/js.svg)">
+                       <div class="back-content">
+                           <br>
+                        <h2 style="color: black">Javascript is porgramming language created special for web sites. All frameworks like Jquery and Angular, created by it.</h2>
+                       </div>
+                   </div>
+                   <div class="back" style="background-image: url(../img/angular.svg); background-size: 100% 100%">
+                       <div class="back-content">
+                           <br>
+                        <h2 style="color: black">Angular is very powerfull framework that provide you to develop strong web apps. Of course I know it. I completed courses about it</h2>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="contacts">
+               <h2>Am I intresting? Contact me</h2>
+               <form>
+                   <div style="text-align: center">
+                   <input type="text" placeholder="Name">
+                   <input type="email" placeholder="Email"></div>
+                   <textarea cols="30" rows="10" placeholder="How can I help you?"></textarea>
+               </form>
+               <button>Send</button>
+           </div>
+           <div class="copy-r">
+               <p>© Serafim Goncharov</p>
+               <p>Created by hands, without templayts and CRMs</p>
+               <p>Thank you for coming</p>
+           </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- build:js -->
+        <script src="js/main.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>
